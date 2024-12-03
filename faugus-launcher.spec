@@ -15,7 +15,7 @@ Requires: python-gobject3
 Requires: python-gi
 Requires: python-requests
 Requires: python-icoextract
-Requires: python3-pillow 
+Requires: python-pillow 
 Requires: umu-launcher
 Requires: imagemagick
 Requires: typelib(AppIndicator3)
