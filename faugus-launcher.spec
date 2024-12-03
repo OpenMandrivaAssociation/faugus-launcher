@@ -1,4 +1,4 @@
-%define oversion 1.1
+%define oversion v.1.1-22
 
 Name:           faugus-launcher
 Version:        1.1~22
