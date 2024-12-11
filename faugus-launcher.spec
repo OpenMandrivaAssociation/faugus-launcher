@@ -1,13 +1,13 @@
-%define oversion 1.1-24
+%define oversion 1.2-1
 
 Name:           faugus-launcher
-Version:        1.1~24
+Version:        1.2~1
 Release:        1
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
 License:        MIT
 URL:            https://github.com/Faugus/faugus-launcher
-Source0:        https://github.com/Faugus/faugus-launcher/archive/1.1-24/%{name}-1.1-24.tar.gz
+Source0:        https://github.com/Faugus/faugus-launcher/archive/%{oversion}/%{name}-%{oversion}.tar.gz
 
 BuildArch:      noarch
 Requires: python
@@ -24,7 +24,7 @@ Requires: typelib(AppIndicator3)
 A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Proton.
 
 %prep
-%autosetup -n %{name}-1.1-24 -p1
+%autosetup -n %{name}-%{oversion} -p1
 
 %build
 
