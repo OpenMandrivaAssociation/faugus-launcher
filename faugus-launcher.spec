@@ -35,7 +35,7 @@ install -Dm755 %{_builddir}/%{name}-%{version}/faugus-proton-manager.py %{buildr
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-components.py %{buildroot}/%{_bindir}/faugus-components
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-launcher.desktop %{buildroot}/%{_datadir}/applications/faugus-launcher.desktop
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-shortcut.desktop %{buildroot}/%{_datadir}/applications/faugus-shortcut.desktop
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-launcher.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
+#install -Dm644 %{_builddir}/%{name}-%{version}/faugus-launcher.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-ea.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ea.png
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-battlenet.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-battlenet.png
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-epic-games.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
@@ -48,7 +48,7 @@ install -Dm644 %{_builddir}/%{name}-%{version}/faugus-ubisoft-connect.png %{buil
 %{_bindir}/faugus-components
 %{_datadir}/applications/faugus-launcher.desktop
 %{_datadir}/applications/faugus-shortcut.desktop
-%{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
+#{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-ea.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-battlenet.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
