@@ -12,7 +12,7 @@ Source0:        https://github.com/Faugus/faugus-launcher/archive/%{version}/%{n
 BuildArch:      noarch
 Requires: python
 Requires: python-gobject3
-Requires: python-pnyput
+Requires: python-pynput
 Requires: python-gi
 Requires: python-requests
 Requires: python-icoextract
