@@ -2,7 +2,7 @@
 
 Name:           faugus-launcher
 Version:        1.3.7
-Release:        1
+Release:        2
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
 License:        MIT
@@ -33,6 +33,8 @@ A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Pr
 
 %install
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-launcher.py %{buildroot}/%{_bindir}/faugus-launcher
+install -Dm755 %{_builddir}/%{name}-%{version}/faugus-gamepad.py %{buildroot}/%{_bindir}/faugus-gamepad
+install -Dm755 %{_builddir}/%{name}-%{version}/faugus-session %{buildroot}/%{_bindir}/faugus-session
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-run.py %{buildroot}/%{_bindir}/faugus-run
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-proton-manager.py %{buildroot}/%{_bindir}/faugus-proton-manager
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-components.py %{buildroot}/%{_bindir}/faugus-components
@@ -49,6 +51,8 @@ install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ubisoft-connect.png
 %files
 %{_bindir}/faugus-launcher
 %{_bindir}/faugus-run
+%{_bindir}/faugus-gamepad
+%{_bindir}/faugus-session
 %{_bindir}/faugus-proton-manager
 %{_bindir}/faugus-components
 %{_datadir}/applications/faugus-launcher.desktop
