@@ -2,7 +2,7 @@
 
 Name:           faugus-launcher
 Version:        1.3.7
-Release:        2
+Release:        3
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
 License:        MIT
@@ -12,6 +12,7 @@ Source0:        https://github.com/Faugus/faugus-launcher/archive/%{version}/%{n
 BuildArch:      noarch
 Requires: python
 Requires: python-gobject3
+Requires: python-pnyput
 Requires: python-gi
 Requires: python-requests
 Requires: python-icoextract
