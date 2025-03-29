@@ -42,7 +42,7 @@ install -Dm755 %{_builddir}/%{name}-%{version}/faugus-proton-manager.py %{buildr
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-components.py %{buildroot}/%{_bindir}/faugus-components
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-launcher.desktop %{buildroot}/%{_datadir}/applications/faugus-launcher.desktop
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-shortcut.desktop %{buildroot}/%{_datadir}/applications/faugus-shortcut.desktop
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-session.desktop %{_datadir}/wayland-sessions/faugus-session.desktop
+install -Dm644 %{_builddir}/%{name}-%{version}/faugus-session.desktop %{buildroot}/%{_datadir}/wayland-sessions/faugus-session.desktop
 
 
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-launcher.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
