@@ -23,6 +23,7 @@ Requires: typelib(AppIndicator3)
 Requires: lib64ayatana-appindicator3-gir0.1
 Requires: python-vdf
 Requires: at-spi2-core
+Requires: lib64canberra-gtk3
 
 %description
 A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Proton.
