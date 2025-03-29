@@ -2,7 +2,7 @@
 
 Name:           faugus-launcher
 Version:        1.3.7
-Release:        6
+Release:        7
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
 License:        MIT
@@ -42,10 +42,11 @@ install -Dm755 %{_builddir}/%{name}-%{version}/faugus-proton-manager.py %{buildr
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-components.py %{buildroot}/%{_bindir}/faugus-components
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-launcher.desktop %{buildroot}/%{_datadir}/applications/faugus-launcher.desktop
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-shortcut.desktop %{buildroot}/%{_datadir}/applications/faugus-shortcut.desktop
+install -Dm644 %{_builddir}/%{name}-%{version}/faugus-session.desktop %{_datadir}/wayland-sessions/faugus-session.desktop
 
 
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-launcher.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
-install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-banner.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-banner.png
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-banner.png %{buildroot}/%{_datadir}/faugus-launcher/faugus-banner.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ea.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ea.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-battlenet.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-battlenet.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-epic-games.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
@@ -62,9 +63,10 @@ install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-notification.ogg %{
 %{_datadir}/applications/faugus-launcher.desktop
 %{_datadir}/applications/faugus-shortcut.desktop
 %{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
-%{_datadir}/icons/hicolor/256x256/apps/faugus-banner.png
+%{_datadir}/faugus-launcher/faugus-banner.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-ea.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-battlenet.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-ubisoft-connect.png
 %{_datadir}/faugus-notification.ogg
+%{_datadir}/wayland-sessions/faugus-session.desktop
