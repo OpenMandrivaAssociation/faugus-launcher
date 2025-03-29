@@ -34,7 +34,7 @@ A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Pr
 %build
 
 %install
-mkdir -p %{buildroot}%{_datdir}%{name}
+mkdir -p %{buildroot}/%{_datadir}/%{name}
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-launcher.py %{buildroot}/%{_bindir}/faugus-launcher
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-run.py %{buildroot}/%{_bindir}/faugus-run
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-proton-manager.py %{buildroot}/%{_bindir}/faugus-proton-manager
@@ -52,7 +52,7 @@ install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-battlenet.png %{bui
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-epic-games.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ubisoft-connect.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ubisoft-connect.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-banner.png %{buildroot}/%{_datadir}/faugus-launcher/faugus-banner.png
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-notification.ogg %{buildroot}/%{_datadir}/faugus-launcher/faugus-notification.ogg
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-notification.ogg %{buildroot}/%{_datadir}/faugus-launcher/faugus-notification.ogg
 
 %files
 %{_bindir}/faugus-launcher
