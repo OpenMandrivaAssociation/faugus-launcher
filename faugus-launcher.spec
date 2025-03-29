@@ -2,7 +2,7 @@
 
 Name:           faugus-launcher
 Version:        1.3.7
-Release:        5
+Release:        6
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
 License:        MIT
@@ -50,6 +50,7 @@ install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ea.png %{buildroot}
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-battlenet.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-battlenet.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-epic-games.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ubisoft-connect.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ubisoft-connect.png
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-notification.ogg %{buildroot}/%{_datadir}/faugus-notification.ogg
 
 %files
 %{_bindir}/faugus-launcher
@@ -66,3 +67,4 @@ install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ubisoft-connect.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-battlenet.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
 %{_datadir}/icons/hicolor/256x256/apps/faugus-ubisoft-connect.png
+%{_datadir}/faugus-notification.ogg
