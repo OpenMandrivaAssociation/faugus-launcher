@@ -34,6 +34,7 @@ A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Pr
 %build
 
 %install
+mkdir -p %{buildroot}%{_datdir}%{name}
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-launcher.py %{buildroot}/%{_bindir}/faugus-launcher
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-run.py %{buildroot}/%{_bindir}/faugus-run
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-proton-manager.py %{buildroot}/%{_bindir}/faugus-proton-manager
@@ -45,12 +46,12 @@ install -Dm644 %{_builddir}/%{name}-%{version}/faugus-shortcut.desktop %{buildro
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-run.desktop %{buildroot}/%{_datadir}/applications/faugus-run.desktop
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-proton-manager.desktop %{buildroot}/%{_datadir}/applications/faugus-proton-manager.desktop
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-session.desktop %{buildroot}/%{_datadir}/wayland-sessions/faugus-session.desktop
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-launcher.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-ea.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ea.png
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-battlenet.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-battlenet.png
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-epic-games.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-ubisoft-connect.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ubisoft-connect.png
-install -Dm644 %{_builddir}/%{name}-%{version}/faugus-banner.png %{buildroot}/%{_datadir}/faugus-launcher/faugus-banner.png
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-launcher.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-launcher.png
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ea.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ea.png
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-battlenet.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-battlenet.png
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-epic-games.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-epic-games.png
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ubisoft-connect.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ubisoft-connect.png
+install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-banner.png %{buildroot}/%{_datadir}/faugus-launcher/faugus-banner.png
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-notification.ogg %{buildroot}/%{_datadir}/faugus-launcher/faugus-notification.ogg
 
 %files
