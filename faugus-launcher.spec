@@ -1,8 +1,8 @@
 #define oversion 1.2-1
 
 Name:           faugus-launcher
-Version:        1.3.7
-Release:        8
+Version:        1.4.1
+Release:        1
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
 License:        MIT
