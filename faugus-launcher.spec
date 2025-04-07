@@ -1,7 +1,7 @@
 #define oversion 1.2-1
 
 Name:           faugus-launcher
-Version:        1.4.1
+Version:        1.4.2
 Release:        1
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
@@ -20,10 +20,10 @@ Requires: python-pillow
 Requires: umu-launcher
 Requires: imagemagick
 Requires: typelib(AppIndicator3)
-Requires: lib64ayatana-appindicator3-gir0.1
+Requires: ayatana-appindicator3-gir0.1
 Requires: python-vdf
 Requires: at-spi2-core
-Requires: lib64canberra-gtk3
+Requires: canberra-gtk3
 
 %description
 A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Proton.
