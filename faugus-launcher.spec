@@ -20,7 +20,7 @@ Requires: python-pillow
 Requires: umu-launcher
 Requires: imagemagick
 Requires: typelib(AppIndicator3)
-Requires: ayatana-appindicator3-gir0.1
+Requires: ayatana-appindicator3-gir
 Requires: python-vdf
 Requires: at-spi2-core
 Requires: canberra-gtk3
