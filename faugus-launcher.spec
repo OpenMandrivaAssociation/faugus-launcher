@@ -1,7 +1,5 @@
-#define oversion 1.2-1
-
 Name:           faugus-launcher
-Version:        1.5.2
+Version:        1.5.8
 Release:        1
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
@@ -35,11 +33,11 @@ A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Pr
 
 %install
 mkdir -p %{buildroot}/%{_datadir}/%{name}
-install -Dm755 %{_builddir}/%{name}-%{version}/faugus-launcher.py %{buildroot}/%{_bindir}/faugus-launcher
-install -Dm755 %{_builddir}/%{name}-%{version}/faugus-run.py %{buildroot}/%{_bindir}/faugus-run
-install -Dm755 %{_builddir}/%{name}-%{version}/faugus-proton-manager.py %{buildroot}/%{_bindir}/faugus-proton-manager
-install -Dm755 %{_builddir}/%{name}-%{version}/faugus-components.py %{buildroot}/%{_bindir}/faugus-components
-install -Dm755 %{_builddir}/%{name}-%{version}/faugus-gamepad.py %{buildroot}/%{_bindir}/faugus-gamepad
+install -Dm755 %{_builddir}/%{name}-%{version}/faugus_launcher.py %{buildroot}/%{_bindir}/faugus-launcher
+install -Dm755 %{_builddir}/%{name}-%{version}/faugus_run.py %{buildroot}/%{_bindir}/faugus-run
+install -Dm755 %{_builddir}/%{name}-%{version}/faugus_proton_manager.py %{buildroot}/%{_bindir}/faugus-proton-manager
+install -Dm755 %{_builddir}/%{name}-%{version}/faugus_components.py %{buildroot}/%{_bindir}/faugus-components
+install -Dm755 %{_builddir}/%{name}-%{version}/faugus_gamepad.py %{buildroot}/%{_bindir}/faugus-gamepad
 install -Dm755 %{_builddir}/%{name}-%{version}/faugus-session %{buildroot}/%{_bindir}/faugus-session
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-launcher.desktop %{buildroot}/%{_datadir}/applications/faugus-launcher.desktop
 install -Dm644 %{_builddir}/%{name}-%{version}/faugus-shortcut.desktop %{buildroot}/%{_datadir}/applications/faugus-shortcut.desktop
@@ -53,6 +51,13 @@ install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-epic-games.png %{bu
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-ubisoft-connect.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/faugus-ubisoft-connect.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-banner.png %{buildroot}/%{_datadir}/faugus-launcher/faugus-banner.png
 install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-notification.ogg %{buildroot}/%{_datadir}/faugus-launcher/faugus-notification.ogg
+
+install -Dm644 assets/faugus-add-symbolic.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/actions/faugus-add-symbolic.svg
+install -Dm644 assets/faugus-exit-symbolic.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/actions/faugus-exit-symbolic.svg
+install -Dm644 assets/faugus-kill-symbolic.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/actions/faugus-kill-symbolic.svg
+install -Dm644 assets/faugus-play-symbolic.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/actions/faugus-play-symbolic.svg
+install -Dm644 assets/faugus-settings-symbolic.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/actions/faugus-settings-symbolic.svg
+install -Dm644 assets/faugus-stop-symbolic.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/actions/faugus-stop-symbolic.svg
 
 %files
 %{_bindir}/faugus-launcher
@@ -73,3 +78,9 @@ install -Dm644 %{_builddir}/%{name}-%{version}/assets/faugus-notification.ogg %{
 %{_datadir}/icons/hicolor/256x256/apps/faugus-ubisoft-connect.png
 %{_datadir}/faugus-launcher/faugus-banner.png
 %{_datadir}/faugus-launcher/faugus-notification.ogg
+%{_iconsdir}/hicolor/scalable/actions/faugus-add-symbolic.svg
+%{_iconsdir}/hicolor/scalable/actions/faugus-exit-symbolic.svg
+%{_iconsdir}/hicolor/scalable/actions/faugus-kill-symbolic.svg
+%{_iconsdir}/hicolor/scalable/actions/faugus-play-symbolic.svg
+%{_iconsdir}/hicolor/scalable/actions/faugus-stop-symbolic.svg
+%{_iconsdir}/hicolor/scalable/actions/faugus-settings-symbolic.svg
