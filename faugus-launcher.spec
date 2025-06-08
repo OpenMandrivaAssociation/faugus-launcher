@@ -9,9 +9,8 @@ Source0:        https://github.com/Faugus/faugus-launcher/archive/%{version}/%{n
 
 BuildArch:      noarch
 Requires: python
-Requires: python%{pyver}dist(gobject3)
+Requires: python%{pyver}dist(pygobject)
 Requires: python%{pyver}dist(pynput)
-Requires: python%{pyver}dist(gi)
 Requires: python%{pyver}dist(requests)
 Requires: python%{pyver}dist(icoextract)
 Requires: python%{pyver}dist(pillow)
