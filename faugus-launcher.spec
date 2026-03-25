@@ -1,5 +1,5 @@
 Name:           faugus-launcher
-Version:        1.14.2
+Version:        1.17.1
 Release:        1
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
@@ -24,6 +24,8 @@ Requires:	python%{pyver}dist(psutil)
 Requires:	umu-launcher
 Requires:	imagemagick
 Requires:	lib64ayatana-appindicator3_1
+Requires:	lib64ayatana-appindicator3-gir0.1
+Requires:	canberra-gtk3
 
 %description
 A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Proton.
@@ -36,6 +38,7 @@ A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Pr
 %{_bindir}/faugus-launcher
 %{_bindir}/faugus-run
 %{_bindir}/faugus-proton-manager
+%{_bindir}/faugus-shortcut
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/256x256/apps/*.png
 %{_iconsdir}/hicolor/256x256/apps/faugus-mono.svg
@@ -50,12 +53,16 @@ A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Pr
 %lang(fr) %{_datadir}/locale/fr/LC_MESSAGES/*.mo
 %lang(hu) %{_datadir}/locale/hu/LC_MESSAGES/*.mo
 %lang(it) %{_datadir}/locale/it/LC_MESSAGES/*.mo
+%lang(ka) %{_datadir}/locale/ka/LC_MESSAGES/*.mo
 %lang(nl) %{_datadir}/locale/nl/LC_MESSAGES/*.mo
 %lang(pl) %{_datadir}/locale/pl/LC_MESSAGES/*.mo
 %lang(pt_BR) %{_datadir}/locale/pt_BR/LC_MESSAGES/*.mo
+%lang(ro) %{_datadir}/locale/ro/LC_MESSAGES/*.mo
 %lang(ru) %{_datadir}/locale/ru/LC_MESSAGES/*.mo
 %lang(sv) %{_datadir}/locale/sv/LC_MESSAGES/*.mo
+%lang(tr) %{_datadir}/locale/tr/LC_MESSAGES/*.mo
 %lang(uk) %{_datadir}/locale/uk/LC_MESSAGES/*.mo
 %lang(zh_CN) %{_datadir}/locale/zh_CN/LC_MESSAGES/*.mo
+%lang(zh_TW) %{_datadir}/locale/zh_TW/LC_MESSAGES/*.mo
 %{_datadir}/metainfo/faugus-launcher.metainfo.xml
 %{py_sitedir}/faugus
