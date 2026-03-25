@@ -1,5 +1,5 @@
 Name:           faugus-launcher
-Version:        1.16.6
+Version:        1.17.1
 Release:        1
 Summary:        A simple and lightweight app for running Windows games using UMU-Launcher
 Group:          Games
@@ -60,6 +60,7 @@ A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Pr
 %lang(ro) %{_datadir}/locale/ro/LC_MESSAGES/*.mo
 %lang(ru) %{_datadir}/locale/ru/LC_MESSAGES/*.mo
 %lang(sv) %{_datadir}/locale/sv/LC_MESSAGES/*.mo
+%lang(tr) %{_datadir}/locale/tr/LC_MESSAGES/*.mo
 %lang(uk) %{_datadir}/locale/uk/LC_MESSAGES/*.mo
 %lang(zh_CN) %{_datadir}/locale/zh_CN/LC_MESSAGES/*.mo
 %lang(zh_TW) %{_datadir}/locale/zh_TW/LC_MESSAGES/*.mo
