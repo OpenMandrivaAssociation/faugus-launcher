@@ -14,18 +14,18 @@ BuildSystem:    meson
 BuildRequires:  gtk-update-icon-cache
 BuildRequires:  meson
 
-Requires:  python-gobject
-Requires:  python%{pyver}dist(requests)
-Requires:  python%{pyver}dist(icoextract)
-Requires:  python%{pyver}dist(pillow)
-Requires:  python%{pyver}dist(filelock)
+#Requires:  python-gobject
+#Requires:  python%{pyver}dist(requests)
+#Requires:  python%{pyver}dist(icoextract)
+#Requires:  python%{pyver}dist(pillow)
+#Requires:  python%{pyver}dist(filelock)
 Requires:  python%{pyver}dist(vdf)
-Requires:  python%{pyver}dist(psutil)
+#Requires:  python%{pyver}dist(psutil)
 Requires:  typelib(Adw)
-Requires:  umu-launcher
-Requires:  imagemagick
-Requires:  typelib(Gtk) = 3.0
-Requires:  typelib(AyatanaAppIndicator3)
+#Requires:  umu-launcher
+#Requires:  imagemagick
+#Requires:  typelib(Gtk) = 4.0
+#Requires:  typelib(AyatanaAppIndicator3)
 
 %description
 A simple and lightweight app for running Windows games using UMU-Launcher/UMU-Proton.
