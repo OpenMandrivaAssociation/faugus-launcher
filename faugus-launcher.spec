@@ -1,6 +1,6 @@
 Name:           faugus-launcher
 Version:        2.3.0
-Release:        1
+Release:        2
 Summary:        Lightweight launcher for Windows games via UMU-Launcher
 Group:          Games
 License:        MIT
@@ -14,6 +14,7 @@ BuildSystem:    meson
 BuildRequires:  gettext
 BuildRequires:  gtk-update-icon-cache
 BuildRequires:  meson
+BuildRequires:  pkgconfig(python3)
 
 #Requires:  python-gobject
 #Requires:  python%{pyver}dist(requests)
