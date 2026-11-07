@@ -1,6 +1,6 @@
 Name:           faugus-launcher
-Version:        2.3.0
-Release:        2
+Version:        2.5.7
+Release:        1
 Summary:        Lightweight launcher for Windows games via UMU-Launcher
 Group:          Games
 License:        MIT
@@ -43,37 +43,13 @@ chmod 0644 %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/*.svg
 ln -sf io.github.Faugus.faugus-launcher.svg \
        %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/faugus-launcher.svg
 
-%files
+%files -f %{name}.lang
 %license LICENSE
 %{_bindir}/faugus-launcher
 %{_datadir}/applications/*.desktop
 %{_iconsdir}/hicolor/scalable/apps/*.svg
 %{_iconsdir}/hicolor/scalable/actions/*.svg
 %{_datadir}/faugus-launcher/*
-%lang(ar) %{_datadir}/locale/ar/LC_MESSAGES/*.mo
-%lang(bg) %{_datadir}/locale/bg/LC_MESSAGES/*.mo
-%lang(cs) %{_datadir}/locale/cs/LC_MESSAGES/*.mo
-%lang(de) %{_datadir}/locale/de/LC_MESSAGES/*.mo
-%lang(es) %{_datadir}/locale/es/LC_MESSAGES/*.mo
-%lang(fa) %{_datadir}/locale/fa/LC_MESSAGES/*.mo
-%lang(fi) %{_datadir}/locale/fi/LC_MESSAGES/*.mo
-%lang(fr) %{_datadir}/locale/fr/LC_MESSAGES/*.mo
-%lang(it) %{_datadir}/locale/it/LC_MESSAGES/*.mo
-%lang(ja) %{_datadir}/locale/ja/LC_MESSAGES/*.mo
-%lang(ka) %{_datadir}/locale/ka/LC_MESSAGES/*.mo
-%lang(nb) %{_datadir}/locale/nb/LC_MESSAGES/*.mo
-%lang(ne) %{_datadir}/locale/ne/LC_MESSAGES/*.mo
-%lang(nl) %{_datadir}/locale/nl/LC_MESSAGES/*.mo
-%lang(pl) %{_datadir}/locale/pl/LC_MESSAGES/*.mo
-%lang(ps) %{_datadir}/locale/ps/LC_MESSAGES/*.mo
-%lang(pt_BR) %{_datadir}/locale/pt_BR/LC_MESSAGES/*.mo
-%lang(ro) %{_datadir}/locale/ro/LC_MESSAGES/*.mo
-%lang(ru) %{_datadir}/locale/ru/LC_MESSAGES/*.mo
-%lang(sr) %{_datadir}/locale/sr/LC_MESSAGES/*.mo
-%lang(sv) %{_datadir}/locale/sv/LC_MESSAGES/*.mo
-%lang(ta) %{_datadir}/locale/ta/LC_MESSAGES/*.mo
-%lang(tr) %{_datadir}/locale/tr/LC_MESSAGES/*.mo
-%lang(zh_CN) %{_datadir}/locale/zh_CN/LC_MESSAGES/*.mo
-%lang(zh_TW) %{_datadir}/locale/zh_TW/LC_MESSAGES/*.mo
+
 %{_datadir}/metainfo/*.xml
 %{py_sitedir}/faugus
