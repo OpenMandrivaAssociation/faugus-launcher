@@ -1,6 +1,6 @@
 Name:           faugus-launcher
 Version:        2.5.7
-Release:        1
+Release:        2
 Summary:        Lightweight launcher for Windows games via UMU-Launcher
 Group:          Games
 License:        MIT
@@ -17,12 +17,13 @@ BuildRequires:  meson
 BuildRequires:  pkgconfig(python3)
 
 #Requires:  python-gobject
-#Requires:  python%{pyver}dist(requests)
+Requires:  python%{pyver}dist(requests)
 #Requires:  python%{pyver}dist(icoextract)
 #Requires:  python%{pyver}dist(pillow)
 #Requires:  python%{pyver}dist(filelock)
+Required:  python%{pyver}dist(pillow-heif)
 Requires:  python%{pyver}dist(vdf)
-#Requires:  python%{pyver}dist(psutil)
+Requires:  python%{pyver}dist(psutil)
 Requires:  typelib(Adw)
 #Requires:  umu-launcher
 #Requires:  imagemagick
